@@ -1,1 +1,77 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ODN Deployment TAT</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 8px;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      min-height: 128px;
+      padding: 16px;
+      border-left: 5px solid #11B8C7;
+      border-radius: 12px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .left { min-width: 0; }
+    .title, .previous { color: #64748b; }
+    .title { font-size: 14px; }
+    .value {
+      margin: 8px 0;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .previous { font-size: 14px; }
+    .ring {
+      flex: 0 0 88px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: conic-gradient(#16a34a 0deg 300deg, #e2e8f0 300deg 360deg);
+      display: grid;
+      place-items: center;
+    }
+    .inner {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .percent { color: #16a34a; font-weight: bold; }
+    .label { margin-top: 3px; font-size: 8px; color: #64748b; }
+    .note { margin: 10px 0 0; font-size: 12px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <div class="title">ODN DEPLOYMENT TAT</div>
+      <div class="value">19.7</div>
+      <div class="previous">Previous: 20.0</div>
+    </div>
+    <div class="ring">
+      <div class="inner">
+        <div class="percent">+1.5%</div>
+        <div class="label">Improved</div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Static preview only — values are not connected to report filters.</p>
+</body>
+</html>
